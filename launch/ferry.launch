@@ -1,0 +1,5 @@
+<launch>
+<rosparam command="load" file="$(find st1)/config/params.yaml"/>
+<node name="gotoctrl" pkg="st1" type="pub_sub.py" output="screen"/>
+<node name="turtlesim" pkg="turtlesim" type="turtlesim_node"/>
+</launch>
